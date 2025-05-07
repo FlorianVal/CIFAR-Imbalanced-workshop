@@ -27,8 +27,8 @@ np.random.seed(42)
 torch.manual_seed(42)
 
 # Patch parameters: x% area, y% of the dataset
-patch_area_frac = 0.1  # portion of image area to cover
-apply_frac = 0.01       # portion of dataset to patch
+patch_area_frac = 0.2  # portion of image area to cover
+apply_frac = 0.4       # portion of dataset to patch
 num_to_patch = int(len(imbalanced_data) * apply_frac)
 indices = random.sample(range(len(imbalanced_data)), num_to_patch)
 
